@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hockey Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Manrope -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind css custom -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "hockey-primary": "#FF4240",
+             /*  "hockey-primary-bg": "rgba(231, 111, 81, 0.10)" */
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .font-manrope {
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-manrope">
+    <header class="md:container md:mx-auto">
+        <nav>
+            <div class="navbar">
+              <div class="navbar-start">
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16"
+                      />
+                    </svg>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li><a class="text-hockey-primary">Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <a class="text-neutral-900 text-4xl font-bold">
+                  Hockey<span class="text-hockey-primary">’</span>s</a
+                >
+              </div>
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                  <li><a class="text-hockey-primary">Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <div class="navbar-end">
+                <button class="btn btn-ghost btn-circle lg:mr-6">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </button>
+      
+                <a class="btn bg-hockey-primary pt-4 pb-4 h-12 w-36 text-white border rounded-lg text-center"
+                  >Get Ticket</a
+                >
+              </div>
+            </div>
+          </nav>      
+    </header>
+
+    <main class="md:container md:mx-auto " >
+        <section class="my-14 justify-center items-center">
+            <div class="carousel w-full rounded-2xl ">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="lg:w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full ">
+                  <img src="Images/2.png" class="lg:w-full">
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+              </div>
+         </section>
+         <section class="my-24">
+            <div>
+                <h3 class="text-3xl font-bold text-center">Professional Hockeys Club</h3>
+                <p class="text-center text-neutral-900 font-medium text-opacity-60 text-sm my-6">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor.Purus urna in sit nullam proin. </p>
+            </div>
+         </section> 
+         <section class="my-16">
+            <div class="grid md:grid-cols-4">
+                <div class="card  ">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-hockey-primary" style="--value:90;" role="progressbar">70%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Prayer Facility</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                    </div>
+                  </div>
+                <div class="card  ">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-emerald-600" style="--value:90;" role="progressbar">70%</div>
+                        </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Experienced Coach</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                    </div>
+                  </div>
+                <div class="card">
+                    <figure class="px-10 pt-10">
+                    <div class="radial-progress text-amber-500" style="--value:90;" role="progressbar">70%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Senior Player</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                    </div>
+                  </div>
+                <div class="card">
+                    <figure class="px-10 pt-10">
+                    <div class="radial-progress text-blue-500" style="--value:70;" role="progressbar">70%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Training Ground</h2>
+                      <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+         </section>
+
+
+  
+         
+    
+         
+
+    </main>
+    <footer>
+
+    </footer>
+  </body>
+</html>
